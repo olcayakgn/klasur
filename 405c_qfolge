@@ -1,0 +1,90 @@
+
+/*********************************************************************
+ 
+   Aufgabe 405c
+ 
+  Schreiben Sie nun einen dynamisch rekursiven Algorithmus zur
+   Berechnung der n-ten Q-Zahl, indem Sie die beiden Funktionen
+ 
+     void dynInit(int n, int cache[])
+     int qRekursivDyn(int n, int cache[])
+ 
+   implementieren. Dynamische Programmierung zeichnet sich wesentlich
+   dadurch aus, dass der Programmierer einen Cache verwendet, um
+   wichtige Zwischenergebnisse speichern und später wiederverwenden
+   zu können.
+ 
+   Die main-Funktion ist wieder in einer anderen Datei von uns
+   vorgegeben. Dort wird auch ein Feld der Größe n+1 zum Cachen der
+   Q-Zahlen erstellt. In diesem Feld sollen Sie beim Index n die
+   jeweils n-te Q-Zahl speichern. main ruft anfangs einmal dynInit
+   auf; in dieser Funktionen führen Sie gegebenenfalls notwendige
+   Initialisierungen durch. Nach der Funktion dynInit ruft main die
+   Funktion qRekursivDyn dreimal auf, jeweils mit verschiedenen
+   Werten für n. Zwischen den Aufrufen gibt main jeweils den Inhalt
+   des Caches (d.h. den Inhalt des Felds) aus.
+ 
+    - Implementieren Sie die Funktion dynInit. Der Parameter n
+      bezeichnet die größt mögliche Q-Zahl, welche im aktuellen
+      Programmdurchlauf berechnet werden wird. Der Cache-Speicher
+      wurde bereits reserviert; Sie sollen dessen Elemente 1 und 2
+      mit Eins und den Rest mit Null initialisieren. (Bei dieser
+      Zählweise wird der Speicher cache[0] nicht verwendet.) Beachten
+      Sie, dass n jede beliebige ganze Zahl größer Null sein kann.
+ 
+    - Die Funktion qRekursivDyn soll mit rekursiven Aufrufen Q-Zahlen
+      berechnen und gleichzeitig alle (Zwischen-)Ergebnisse in einem
+      Zwischenspeicher aufbewahren. Hat qRekursivDyn die gewünschte
+     Q-Zahl bereits gespeichert, so soll sie diese direkt aus dem
+     Speicher holen – ohne weitere Berechnungen.
+     
+ ***********************english*******************************
+ 
+Now write a dynamic recursive algorithm for
+ calculating  the nth Q-number by using the two functions
+ 
+     void dynInit (int n, int cache [])
+     int qRecursiveDyn (int n, int cache [])
+ 
+    Dynamic programming is essential
+   in that the programmer uses a cache to
+   save important temporary values to able to use them again.
+ 
+   The main function is again in another file of ours
+   specified. There will also be a field of size n + 1 for caching
+   Q-numbers created. In this field you should use the index n
+   store the nth Q-number. main calls dynInit once
+   on; If necessary, you can carry out necessary initilayations in these functions
+ . After the function dynInit main calls the
+   Function qRecursiveDyn three times, each with different
+   Values ​​for n. Between the calls main gives content of Cache(i.e., the contents of the field).
+ 
+    - Implement the function dynInit. The parameter n
+      denotes the largest possible Q-number, which  will be  in the current
+      Programrun calculated. The cache memory
+      has already been reserved; You should initialize its elements 1 and 2
+       with one and the rest with zero. (At this
+      Counting the memory cache [0] is not used.) Note
+      that n can be any integer greater than zero.
+ 
+   The qRecursiveDyn function is designed to recalculate Q-numbers
+   at the same time . all (intermediate)-results will be in one
+    Cache stored. QRekursivDyn has the desired
+    Q number already stored, so it should get theese  directly from the
+   memory - without further calculations.
+ *********************************************************************/
+
+
+#include <stdio.h>
+
+
+void dynInit(int n, int cache[])
+{
+
+}
+
+
+int qRekursivDyn(int n, int cache[])
+{
+
+}
