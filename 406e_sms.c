@@ -74,7 +74,7 @@
 #include <stdlib.h>
 
 
-struct SMS 
+struct SMS
 {
 	char number[14];
 	char text[161];
@@ -83,7 +83,7 @@ struct SMS
 };
 
 
-struct Queue 
+struct Queue
 {
 	struct SMS *front;
 	struct SMS *back;
@@ -92,11 +92,40 @@ struct Queue
 
 void push(struct Queue *queue, struct SMS *new)
 {
+	if (queue->front==0 && queue->back==0)
+	{
+		queue->front = new;
+		queue->back = new;
+		new->next = 0;
+	}
 
+	else
+	{
+		queue->back->next = new;
+		queue->back = new;
+		new->next = 0;
+	}
 }
 
 
 struct SMS *pop(struct Queue *queue)
 {
+	struct SMS *out;
 
+	if (queue->front==0 && queue->back==0) {return 0;}
+
+	else
+	{
+		out = queue->front;
+		queue->front = out->next;
+		out->next = 0;
+
+		if (queue->front==0)
+		{
+			queue->back = 0;
+		}
+
+		return out;
+
+	}
 }
